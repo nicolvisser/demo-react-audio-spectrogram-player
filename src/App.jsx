@@ -15,7 +15,7 @@ function App() {
         sxx={sxx}
         specHeight={250}
         navigator
-        navHeight={30}
+        navHeight={60}
         settings
         dark
       />

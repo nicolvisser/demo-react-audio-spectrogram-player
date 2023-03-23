@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-audio-spectrogram-player": "^0.0.3",
+    "react-audio-spectrogram-player": "^0.0.5",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
