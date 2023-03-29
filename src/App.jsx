@@ -1,10 +1,23 @@
 import './App.css'
 import SpectrogramPlayer from "react-audio-spectrogram-player";
 
-import sxx from "./assets/19-198-0001.json";
-import src from "./assets/19-198-0001.wav";
+import sxx from "./assets/librispeech/sxx/19-198-0001.json"
+import src from "./assets/librispeech/wav/19-198-0001.wav"
+import wordIntervals from "./assets/librispeech/word_intervals/19-198-0001.json"
+import phoneIntervals from "./assets/librispeech/phone_intervals/19-198-0001.json"
 
 function App() {
+
+  const annotations = [
+    {
+      title: "Word Intervals",
+      data: wordIntervals
+    },
+    {
+      title: "Phone Intervals",
+      data: phoneIntervals
+    }
+  ]
 
   return (
     <div className="App">
@@ -17,6 +30,7 @@ function App() {
         navigator
         navHeight={60}
         settings
+        annotations={annotations}
         dark
       />
       <p>
