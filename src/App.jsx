@@ -19,18 +19,58 @@ function App() {
     }
   ]
 
+  /*
+
+      src: C,
+    sxx: B = void 0,
+    sampleRate: E = 16e3,
+    n_fft: n = 1024,
+    win_length: e = 400,
+    hop_length: i = 160,
+    f_min: d = 0,
+    f_max: s = E / 2,
+    n_mels: o = 128,
+    top_db: a = 80,
+    annotations: t = [],
+    navigator: D = !1,
+    settings: h = !1,
+    startTimeInitial: b = void 0,
+    endTimeInitial: S = void 0,
+    playbackSpeedInitial: y = 1,
+    playheadModeInitial: R = "page",
+    specHeight: l = 200,
+    navHeight: G = 50,
+    colormap: w = "viridis",
+    transparent: j = !1,
+    dark: Z = !1
+    */
+
   return (
     <div className="App">
       <h1>react-audio-spectrogram-player</h1>
       <h2>Demo:</h2>
       <SpectrogramPlayer
         src={src}
-        sxx={sxx}
-        specHeight={250}
-        navigator
-        navHeight={60}
-        settings
+        //sxx={sxx}
+        sampleRate={16000}
+        n_fft={1024}
+        win_length={400}
+        hop_length={160}
+        f_min={0}
+        f_max={8000}
+        n_mels={128}
+        top_db={80}
         annotations={annotations}
+        navigator
+        settings
+        startTimeInitial={0}
+        endTimeInitial={10}
+        playbackSpeedInitial={1}
+        playheadModeInitial="page"
+        specHeight={250}
+        navHeight={60}
+        colormap="viridis"
+        transparent
         dark
       />
       <p>
